@@ -1,83 +1,47 @@
 (function () {
   // Create and inject styles
   const styles = `
-        .n8n-chat-widget {
-    --chat--color-primary: #015751;
-    --chat--color-secondary: #047fef;
-    --chat--color-background: #ffffff;
-    --chat--color-font: #000101;
-    font-family: 'Geist Sans', sans-serif;
-}
+    .n8n-chat-widget {
+        --chat--color-primary: #015751;
+        --chat--color-secondary: #047fef;
+        --chat--color-background: #ffffff;
+        --chat--color-font: #000101;
+    }
 
-.n8n-chat-widget .chat-container {
-    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
-    border: 1px solid rgba(1, 87, 81, 0.15);
-}
+    .n8n-chat-widget .chat-container {
+        box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+        border: 1px solid rgba(1, 87, 81, 0.15);
+    }
 
-.n8n-chat-widget .brand-header {
-    background: linear-gradient(135deg, var(--chat--color-primary), var(--chat--color-secondary));
-    color: white;
-    border-bottom: none;
-}
+    .n8n-chat-widget .brand-header {
+        border-bottom: 1px solid rgba(1, 87, 81, 0.15);
+    }
 
-.n8n-chat-widget .brand-header span {
-    color: white;
-    font-weight: 600;
-}
+    .n8n-chat-widget .new-chat-btn {
+        background: linear-gradient(135deg, var(--chat--color-primary) 0%, var(--chat--color-secondary) 100%);
+    }
 
-.n8n-chat-widget .close-button {
-    color: white;
-    opacity: 0.8;
-}
-.n8n-chat-widget .close-button:hover {
-    opacity: 1;
-}
+    .n8n-chat-widget .chat-message.user {
+        background: linear-gradient(135deg, var(--chat--color-primary) 0%, var(--chat--color-secondary) 100%);
+        box-shadow: 0 4px 10px rgba(1, 87, 81, 0.25);
+    }
 
-.n8n-chat-widget .new-chat-btn {
-    background: linear-gradient(135deg, var(--chat--color-primary), var(--chat--color-secondary));
-    border-radius: 6px;
-}
-.n8n-chat-widget .new-chat-btn:hover {
-    transform: scale(1.03);
-}
+    .n8n-chat-widget .chat-message.bot {
+        border: 1px solid rgba(4, 127, 239, 0.2);
+    }
 
-.n8n-chat-widget .chat-message.user {
-    background: linear-gradient(135deg, var(--chat--color-primary), var(--chat--color-secondary));
-    box-shadow: 0 4px 10px rgba(1, 87, 81, 0.25);
-}
+    .n8n-chat-widget .chat-input button {
+        background: linear-gradient(135deg, #f87b03 0%, var(--chat--color-primary) 100%);
+    }
 
-.n8n-chat-widget .chat-message.bot {
-    border: 1px solid rgba(4, 127, 239, 0.2);
-}
+    .n8n-chat-widget .chat-toggle {
+        background: linear-gradient(135deg, var(--chat--color-primary) 0%, var(--chat--color-secondary) 100%);
+        box-shadow: 0 4px 12px rgba(1, 87, 81, 0.3);
+    }
 
-.n8n-chat-widget .chat-input button {
-    background: linear-gradient(135deg, #f87b03, var(--chat--color-primary));
-    border-radius: 6px;
-}
-.n8n-chat-widget .chat-input button:hover {
-    transform: scale(1.04);
-}
-
-.n8n-chat-widget .chat-toggle {
-    background: linear-gradient(135deg, var(--chat--color-primary), var(--chat--color-secondary));
-    box-shadow: 0 4px 12px rgba(1, 87, 81, 0.3);
-}
-.n8n-chat-widget .chat-toggle:hover {
-    transform: scale(1.05);
-}
-
-.n8n-chat-widget .chat-footer a {
-    color: #f87b03;
-}
-
-        .n8n-chat-widget .chat-footer a {
-            color: var(--chat--color-primary);
-            text-decoration: none;
-            font-size: 12px;
-            opacity: 0.8;
-            transition: opacity 0.2s;
-            font-family: inherit;
-        }
+    .n8n-chat-widget .chat-footer a {
+        color: #f87b03;
+    }
 
         .n8n-chat-widget .chat-footer a:hover {
             opacity: 1;
@@ -148,7 +112,7 @@
       welcomeText: "",
       responseTimeText: "",
       poweredBy: {
-        text: "Powered by PPSDM LH",
+        text: "PPSDM LH",
         link: "https://p2sdm.kemenlh.go.id",
       },
     },
