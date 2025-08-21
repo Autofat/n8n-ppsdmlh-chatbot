@@ -4,9 +4,9 @@
   const styles = `
         .n8n-chat-widget {
             --chat--color-primary: var(--n8n-chat-primary-color, #015650);
-            --chat--color-secondary: var(--n8n-chat-secondary-color, #f97b02);
-            --chat--color-background: var(--n8n-chat-background-color, #ffffff);
-            --chat--color-font: var(--n8n-chat-font-color, #333333);
+            --chat--color-secondary: var(--n8n-chat-secondary-color, #ffffff);
+            --chat--color-background: var(--n8n-chat-background-color, #1d5971);
+            --chat--color-font: var(--n8n-chat-font-color, #000000ff);
             font-family: 'Geist Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
 
@@ -41,7 +41,7 @@
             display: flex;
             align-items: center;
             gap: 12px;
-            border-bottom: 1px solid rgba(249,123,2,255);
+            border-bottom: 1px solid rgba(193,149,15,255);
             position: relative;
         }
 
